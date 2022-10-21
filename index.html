@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <style></style>
+    <title>REST Countries API</title>
+  </head>
+
+  <body>
+    <header>
+      <h3>Where is the world?</h3>
+      <p class="lightmode dark">Dark mode</p>
+    </header>
+    <main>
+      <div class="filters">
+        <div class="filter containerInputs">
+          <i class="fi fi-br-search"></i>
+          <input
+            type="text"
+            size="100"
+            name=""
+            id="inputFilter"
+            placeholder="Search for the country..."
+          />
+        </div>
+
+        <div class=" containerDropdown">
+          <div class="filter containerText">
+            <p>Filter by region</p>
+            <i class="fi fi-rr-angle-small-down"></i>
+          </div>
+
+          <ul class="dropdown">
+            <li class="listElements" data-country="Europe"><span>Europe</span></li>
+            <li class="listElements" data-country="Asia"><span>Asia</span></li>
+            <li class="listElements" data-country="America"><span>America</span></li>
+            <li class="listElements" data-country="Africa"><span>Africa</span></li>
+            <li class="listElements" data-country="Oceania"><span>Oceania</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cardsContainer">
+        <!-- Content -->
+      </div>
+    </main>
+  </body>
+  <script src="./assets/scripts/script.js"></script>
+</html>

@@ -1,0 +1,178 @@
+@import url("https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+html[data-theme=light] {
+  --background-color: #f4f0f0;
+  --text-color: #111517;
+  --background-element: #ffffff;
+  --background-element-hover: #e2dddd;
+}
+
+html[data-theme=dark] {
+  --background-color: #202c37;
+  --text-color: #ffffff;
+  --background-element: #2b3945;
+  --background-element-hover: #3c5c78;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--background-element);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  width: 100%;
+}
+header h3 {
+  padding: 5px;
+}
+header .lightmode {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+header .lightmode:hover {
+  background-color: var(--background-element-hover);
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main .filters {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  flex-wrap: wrap;
+}
+main .filters .filter > * {
+  padding: 10px;
+}
+main .filters .containerInputs {
+  background-color: var(--background-element);
+  border-radius: 4px;
+  display: flex;
+}
+main .filters .containerInputs input {
+  border: none;
+  outline: none;
+  background-color: var(--background-element);
+  font-family: inherit;
+  font-size: 14px;
+  position: relative;
+  color: var(--text-color);
+  padding-right: 10px;
+}
+main .filters .containerInputs input::-moz-placeholder {
+  color: var(--text-color);
+  font-size: 14px;
+}
+main .filters .containerInputs input:-ms-input-placeholder {
+  color: var(--text-color);
+  font-size: 14px;
+}
+main .filters .containerInputs input::placeholder {
+  color: var(--text-color);
+  font-size: 14px;
+}
+main .filters .containerInputs .focusColor {
+  background-color: var(--background-element-hover);
+}
+main .filters .containerInputs i {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: var(--text-color);
+  margin: 0 10px;
+}
+main .filters .focusColor {
+  background-color: var(--background-element-hover);
+}
+main .filters .containerDropdown {
+  color: var(--text-color);
+  position: relative;
+  cursor: pointer;
+}
+main .filters .containerDropdown .containerText {
+  display: flex;
+  background-color: var(--background-element);
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 3px;
+}
+main .filters .containerDropdown .containerText:hover {
+  background-color: var(--background-element-hover);
+}
+main .filters .containerDropdown .containerText i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .filters .containerDropdown ul.dropdown {
+  background-color: var(--background-element);
+  border-radius: 4px;
+  padding: 10px;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+main .filters .containerDropdown ul.dropdown.show {
+  display: block;
+  padding: 0;
+}
+main .filters .containerDropdown ul.dropdown li {
+  list-style-type: none;
+  font-family: inherit;
+  padding: 10px;
+}
+main .filters .containerDropdown ul.dropdown li:hover {
+  background-color: var(--background-element-hover);
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: space-between;
+  row-gap: 10px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding: 0 50px;
+  margin: 0 auto;
+  /* display: flex;
+    justify-content: space-between; */
+}
+.cardsContainer .card {
+  background-color: var(--background-element);
+  color: var(--text-color);
+  flex-wrap: wrap;
+  border-radius: 4px;
+}
+.cardsContainer .card:hover {
+  cursor: pointer;
+}
+.cardsContainer .card img {
+  width: 100%;
+  height: 50%;
+  border-radius: 4px 4px 0 0;
+}
+.cardsContainer .card h4 {
+  padding: 10px 30px;
+}
+.cardsContainer .card p {
+  padding: 1px 30px;
+  font-weight: 600;
+}
+.cardsContainer .card p span {
+  font-weight: 300;
+}/*# sourceMappingURL=style.css.map */
